@@ -2,7 +2,7 @@ package com.servlet;
 
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +17,7 @@ import com.service.BankManagementService;
  * Servlet implementation class LoginController
  */
 public class LoginController extends HttpServlet {
-	private static Logger logger = Logger.getLogger(LoginController.class);
+	//private static Logger logger = Logger.getLogger(LoginController.class);
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -35,7 +35,7 @@ public class LoginController extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		logger.info("Inside doGet method of Item Controller");
+	//	logger.info("Inside doGet method of Item Controller");
 		doPost(request, response);
 	}
 

@@ -26,7 +26,8 @@ public class BankManagementDAO {
 			ps1.executeUpdate();
 			ps2=con.prepareStatement("insert into tbl_login_tja58(admin,admin123,manager,active)");
 			ps2.executeUpdate();*/
-			ps = con.prepareStatement("select role,Status,password from sqldb.tbl_login_tja58 where userId=? and password=?");
+			String sname=System.getenv("RDS_DB_NAME");
+			ps = con.prepareStatement("select role,Status,password from mysqldb.tbl_login_tja58 where userId=? and password=?");
 			ps.setString(1, userId);
 			ps.setString(2, password);
 			rs = ps.executeQuery();
@@ -318,7 +319,7 @@ public class BankManagementDAO {
 		ResultSet rs;
 		try {
 			ps = con.prepareStatement("select * from tbl_employee_tja58 where EmpId=?");
-			ps.setString(1, empId);
+			ps.setString(1, empId);	
 			rs = ps.executeQuery();
 			while (rs.next()) {
 				e.setEmpId(rs.getString(1));
