@@ -1,5 +1,7 @@
 package com.DBUtil;
 
+import java.io.IOException;
+import java.net.InetAddress;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -32,6 +34,12 @@ public class DBUtil {
 			System.out.println("Connecting...!");
 		//	con=DriverManager.getConnection(url,username,password);
 		//	con=DriverManager.getConnection(url);
+			try {
+				System.out.println(InetAddress.getLocalHost().getHostName());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			System.out.println("Connection Established");
 		
 		} catch (ClassNotFoundException e) {

@@ -98,7 +98,7 @@
 	<br>
 	<br>
 <%String user1=(String) session.getAttribute("user"); %> 
-<p align="right"><font color="green"><strong ><i>Welcome <%=session.getAttribute("name")%>,Manager</i></strong></font></p>
+<p align="right"><font color="green"><strong ><i>Welcome <%=session.getAttribute("hostname")%>,HostName</i></strong></font></p>
 
 <iframe  name="index" height=450 width=1300  frameborder="0">
 

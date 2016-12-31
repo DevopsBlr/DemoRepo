@@ -1,6 +1,7 @@
 package com.servlet;
 
 import java.io.IOException;
+import java.net.InetAddress;
 
 //import org.apache.log4j.Logger;
 
@@ -77,7 +78,9 @@ public class LoginController extends HttpServlet {
 				
 			} else if (result.equalsIgnoreCase("manager")) {
 				session.setAttribute("name", empName);
+				String s=InetAddress.getLocalHost().getHostName();
 				session.setAttribute("user", userId);
+				session.setAttribute("hostname", s);
 				rd = request.getRequestDispatcher("/JSP/Manager.jsp");
 				rd.forward(request, response);
 			} else if (result.equalsIgnoreCase("cashier")) {
