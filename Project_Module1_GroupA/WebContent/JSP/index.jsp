@@ -112,8 +112,7 @@
 
 
 
-			<strong><font color="white" size="6">ABC Bank
-					Management</font></strong>
+			<strong><font color="white" size="6">ABC Banking and Financing Corporation</font></strong>
 
 
 
