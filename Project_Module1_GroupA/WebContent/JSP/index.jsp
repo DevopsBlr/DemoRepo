@@ -14,7 +14,7 @@
 <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-<title>XYZ Bank Management</title>
+<title>DEVOPS Bank Management</title>
 <!--REQUIRED STYLE SHEETS-->
 <!-- BOOTSTRAP CORE STYLE CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet" />
